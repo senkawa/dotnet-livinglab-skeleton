@@ -5,6 +5,7 @@ using livinglab_main.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace livinglab_main.Controllers;
+
 [Route("home")]
 public class HomeController : Controller
 {
@@ -18,13 +19,13 @@ public class HomeController : Controller
     [Route("/")]
     public IActionResult Index()
     {
-        return View();
+        return View("Index");
     }
 
     [Route("privacy")]
     public IActionResult Privacy()
     {
-        return View();
+        return View("Privacy");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
