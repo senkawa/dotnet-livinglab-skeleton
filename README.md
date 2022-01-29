@@ -14,6 +14,7 @@ Install ef tools if they aren't already present.
 
 #### Run migrations
 `dotnet ef database update --context ApplicationDbContext`
+
 `dotnet ef database update --context IdentityDataContext`
 Alternatively, run the web app and let dotnet run migrations automatically. If you encounter an exception page, click on "Run migrations" and refresh.
 
