@@ -14,7 +14,9 @@
 
 ## FAQ
 ### Tailwind
-An npm script has been configured with the appropriate calls to the tailwind CLI (see `package.json`). Newer versions of tailwind operate in JIT mode. The tldr here is your css (`webroot/css/index.css`) needs to be "compiled". It will then be outputted to `webroot/dist/site.css`, where it's reference by your layout file (`Views/Shared/_Layout.cshtml`).
+An npm script has been set up with the appropriate calls to the tailwindcli (see `package.json`). Newer versions of tailwind operate in JIT mode. The tl;dr here is your css (`webroot/css/index.css`) needs to be *compiled* before it can be *included*. 
+
+It's output will be stored at `webroot/dist/site.css`, where it will be referenced by the main layout file (`Views/Shared/_Layout.cshtml`).
 
 #### dev
 Running `npm run dev` will start tailwindcli in "watch" mode. Any changes you make will automatically be reflected.
